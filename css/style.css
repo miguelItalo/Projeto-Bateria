@@ -6,7 +6,7 @@
 }
 html{
     --title-color: #fff;
-    --base-color: #333;
+    --base-color: #111;
     --base-color-second: #00ff7f;
 }
 /* APLICANDO O FLEXBOX NO BODY HTML*/
@@ -17,7 +17,7 @@ body{
     align-items: center;
     flex-direction: column;
     /* USANDO VARIAVEIS NO CSS */
-    background: linear-gradient(-45deg,var(--base-color-second), var(--base-color));
+    background: linear-gradient(-45deg, navy, var(--base-color));
     /* TRANSFORMANDO "PIXEL - PX" EM "REM" */
     font-size: 62.5%;
     margin: 2.4rem;
@@ -52,8 +52,9 @@ h1{
     font-size: 1.5rem;
     font-weight: bold;
 }
-.key .active{
-
+.key.active{
+    border: 0.2rem solid var(--base-color-second);
+    color: var(--base-color-second);
 }
 .composer{
     width: 26rem;
